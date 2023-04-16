@@ -19,3 +19,6 @@ conda activate venv/
 pip install -r requirements.txt
 
 ```
+THIS IS SOURCE OF END-TO-END DEPLOYED PROJECT:(DIAMOND PRICE PREDICTION)
+
+T
