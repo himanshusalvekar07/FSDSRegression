@@ -31,7 +31,7 @@ def evaluate_model(X_train,y_train,X_test,y_test,models):
             
 
             # Predict Testing data
-            y_test_pred=model.predict(X_test)
+            y_test_pred =model.predict(X_test)
 
             # Get R2 scores for train and test data
             #train_model_score = r2_score(ytrain,y_train_pred)
@@ -45,3 +45,10 @@ def evaluate_model(X_train,y_train,X_test,y_test,models):
         logging.info('Exception occured during model training')
         raise CustomException(e,sys)
     
+def load_object(file_path):
+    try:
+        with open(file_path,'rb') as file_obj:
+            return pickle.load(file_obj)
+    except Exception as e:
+        logging.info('Exception Occured in load_object function utils')
+        raise CustomException(e,sys)
