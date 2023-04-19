@@ -1,4 +1,4 @@
-### END to END ML Project
+### END to END ML Project (DIAMOND PRICE PREDICTION)
 
 
 
@@ -19,3 +19,6 @@ conda activate venv/
 pip install -r requirements.txt
 
 ```
+
+
+T
